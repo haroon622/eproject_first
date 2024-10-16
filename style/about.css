@@ -1,0 +1,184 @@
+.heading{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-height: 1000px;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 1px auto;
+           
+            margin-bottom: 20px;
+            margin-top: 30px;
+            
+            
+            border-radius: 10px;
+           
+          
+          }
+          .heading>h1{
+            
+            font-weight: 400;
+            font-style: normal;
+            font-size: 40px;
+            color: teal;
+            padding: 10px 40px;
+            margin: 5px;
+           
+          }
+         
+          .heading>h1>.title{
+            color: white;
+            cursor: pointer;
+            
+           
+          }
+          .aboutt{
+            margin: 25%;
+           
+            
+            
+            max-width: 100%;
+            
+            
+            color: white;
+            text-transform: uppercase;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background:white;
+            
+           
+          }
+          .abt{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: white;
+            gap: 40px;
+            
+          }
+          .abt-img{
+            flex: 1;
+            margin-right: 10px;
+            margin-left: 4px;
+            overflow: hidden;
+            color: black;
+            box-shadow: 0px 2px 4px black;
+            max-width: 4000px;
+            display: flex;
+            background: linear-gradient(50deg, teal, black);
+            justify-content: center;
+            align-items: center;
+            
+           
+          }
+         
+          .abt-img>img{
+            width: 60%;
+            height: auto;
+           display: block;
+           transition: 0.2 ease;
+           border-radius: 50px;
+           margin: 30px;
+           
+           
+          }
+          .abt-img>img:hover{
+            transform: scale(1.01) ;
+           
+          }
+          .content{
+            flex: 1;
+            max-height: 1000px;
+          
+            height: auto;
+            line-height: 2px;
+            text-align: center;
+            border-radius: 10px;
+           
+            
+          }
+          .content>h2{
+            font-size: 30px;
+            margin-bottom: 30px;
+            
+          
+            display: inline;
+            padding: 1px 30px;
+           
+            color: teal;
+            border-radius: 20px;
+            
+            align-items: start;
+          }
+          .content>p{
+            font-size: 14px;
+            line-height: 1.5;
+            align-items: center;
+            display: inline-block;
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+          
+          }
+          .content>a{
+            display: inline-block;
+            padding: 10px 40px;
+            font-size: 12px;
+            text-decoration: none;
+            background-color: teal;
+            color: white;
+            border-radius: 20px;
+            margin-top: 5px;
+            border: 2px solid teal;
+            transition: 0.3s ease;
+          
+          }
+          .content>a:hover{
+            display: inline-block;
+            padding: 10px 40px;
+            font-size: 12px;
+            text-decoration: none;
+            background-color: teal;
+            color: black;
+            border-radius: 20px;
+            margin-top: 5px;
+            border: 2px solid teal;
+            transition: 0.3s ease;
+
+          }
+          
+          @media screen and (max-width: 1100px){
+           
+            .heading{
+              padding: 0px 20px;
+            }
+            .heading>h1{
+              font-size: 36px;
+          
+            }
+            .heading>p{
+              font-size: 17px;
+              margin: 0px;
+            }
+            .aboutt{
+              padding: 0px;
+            }
+            .abt{
+              padding: 20px;
+              flex-direction: column;
+            }
+            .abt>.abt-img{
+              margin-right: 0px;
+              margin-bottom: 20px;
+            }
+            .content{
+              padding: 0px;
+              font-size: 16px;
+              
+            }
+            .content>a{
+              font-size: 16px;
+            }
+          }

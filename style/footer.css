@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.footer-body {
+    line-height: 1.5;
+    font-family: 'Poppins' sans-serif;
+    background-color: black;
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer-container {
+    margin: auto;
+    max-width: 1170px;
+    margin: 40px 0px 0px 0px;
+
+}
+ul {
+    list-style: none;
+}
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.footer-column {
+    width: 30%;
+    padding: 0 15%;
+}
+.footer-column h4 {
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    
+}
+.footer-column h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: goldenrod;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-column ul li:not(last child) {
+    margin-bottom: 10px;
+}
+.footer-column ul li a {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-column .social a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+
+}
+
+
+
+
+.footer-column ul li a :hover {
+    color: #ffffff;
+    padding-left: 10px;
+
+}
+.social-media i {
+    color: white;
+}
+
+.footer {
+    background-color: white;
+    padding: 70px 0;
+}
+
+.email-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.sign-up>button {
+    padding: 10px 12px 10px 12px;
+    color: white;
+    background: gainsboro;
+    border-radius: 10px;
+    box-shadow: 3px 4px 0.3 white;
+    background-color: rgb(245, 127, 127);
+    text-transform: uppercase;
+}
+
+.sign-up>button:hover {
+    padding: 10px 12px 10px 12px ;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 4px 4px 0.3 white;
+    background-color: goldenrod;
+    pointer-events: stroke;
+}
+
+.email-bar input {
+    width: 50%;
+    height: 2pc;
+    border-radius: 9px;
+    text-indent: 20px;
+}
+
+.email-bar>h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 50px;
+}
+
+hr {
+    color: black;
+    background-color: goldenrod;
+    color: goldenrod;
+}
+
+.social-media>a {
+    position: relative;
+}
+@media screen and (max-width: 100px ){
+    body{
+        overflow-x: hidden;
+    }
+}

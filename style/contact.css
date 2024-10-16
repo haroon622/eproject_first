@@ -1,0 +1,169 @@
+/* root */
+:root {
+  --primary: #ff0185;
+  --secondary: #091126;
+}
+
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body selector */
+.containerz {
+  height: 50%;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(145deg, var(white), var(black));
+  font-family: sans-serif; /* Set a default font family */
+}
+
+/* contact class div */
+.contacts {
+  height: 50%;
+  width: 80%; /* Adjust width for responsiveness */
+  border-radius: 1rem;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 90 90rem 90rem rgba(0, 0, 0, 0.2); /* Adjust shadow for responsiveness */
+}
+
+/* map and form class div */
+.map, .formz {
+  flex: 1; /* Make map and form take up equal space */
+}
+
+/* map class iframe for google map */
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* form class div before */
+.formz::before {
+  top: 10%;
+  left: -2.8rem;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 1.4rem solid transparent;
+  
+}
+
+/* form class div heading h1 */
+.formz h1 {
+  color: black;
+  font-size: 1.8rem; /* Adjust font size for responsiveness */
+  padding: 0 2rem;
+  position: relative;
+  
+  font-weight: 50;
+  font-style: normal;
+  font-size: 40px;
+}
+
+/* form class div form */
+.formz form {
+  padding: 0 2rem;
+}
+
+/* form class input and texarea */
+.formz input, .formz textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 0.08rem solid var(--primary);
+  border-radius: 2rem;
+  background-color: unset;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* form div class input (not first child), textarea and button */
+.formz input:not(:first-child), .form textarea, .form button {
+  margin-top: 0.8rem;
+}
+
+/* form class div textarea */
+.formz textarea {
+  height: 6rem;
+  resize: vertical;
+}
+
+/* form class div button */
+.formz button {
+  background-color: var(--primary);
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* headin h1 after */
+h1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0; /* Initial width set to 0 */
+  height: 2px; /* Underline height */
+  background-color: white; /* Underline color (customize) */
+  transition: width 1s ease-in-out; /* Animation properties */
+  bottom:0.1 ; /* Positions underline at the bottom */
+}
+
+/* heading h1 hover after */
+h1:hover:after {
+  width: 4%; /* Expands underline on hover */
+}
+
+/* heading h1 hover */
+h1:hover {
+  color: goldenrod;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* submit button */
+.submit-btn {
+   /* Default button styles (background color, border, etc.) */
+background-color: #007bff; /* Example blue color */
+color: #fff; /* Example white text */
+border: none;
+padding: 1rem 2rem;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+}
+
+/* submit button hover */
+.submit-btn:hover {
+  background-color: goldenrod; /* Example darker blue on hover */
+  transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 900px) {
+  .contacts {
+    width: 100%; /* Make contact section take full width on smaller screens */
+    flex-direction: column; /* Stack map and form on top of each other */
+  }
+
+  .map, .formz {
+    flex: none; /* Remove flex for map and form on smaller screens */
+  }
+
+  .map {
+    height: 30vh; /* Adjust map height for smaller screens */
+  }
+
+  .formz {
+    height: auto; /* Allow form to grow as needed on smaller screens */
+    pointer-events: none;
+  }
+}
+
+  

@@ -1,0 +1,244 @@
+* {
+     margin: 0;
+     padding: 0;
+ }
+ body{
+     overflow-x: hidden;
+ }
+ .container{
+     max-width: 1200px;
+     margin: auto;
+     padding: 20px;
+     box-sizing: border-box;
+     /* width: 100%;
+     margin: auto;
+     transition: 0.5s; */
+ }
+ .container h1 {
+     display: flex;
+     justify-content: center;
+     color: white;
+     background-color: teal;
+     border-radius: 4px;
+     width: 100%;
+     padding: 15px 70px 15px 70px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     /* padding-left: 45px;
+     padding-right: 45px; */
+ }
+ 
+ h1:hover {
+     font-size: 45px;
+ 
+ }
+ 
+ .product {
+     margin-left: 85px;
+     margin-top: 65px;
+     position: relative;
+ }
+ 
+ img {
+     width: 300px;
+     height: 300px;
+ }
+ 
+ .prod-img {
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     border-radius: 4px;
+     border: 2px solid teal;
+ }
+ 
+ .descrip {
+     /* margin-top: 350px; */
+     margin-left: 450px;
+     position: relative;
+     top: -280px;
+ }
+ 
+ .descrip h3 {
+     font-size: 30px;
+     line-height: 43px;
+     color: brown;
+ }
+ #sonyy{
+     margin-top: 140px;
+ }
+ 
+ h3:hover {
+     font-size: 40px;
+ }
+ 
+ p {
+     margin: 20px;
+     font-size: 16px;
+     line-height: 26px;
+     color: teal;
+ }
+ 
+ #btn {
+     padding: 12px;
+     margin: 10px;
+     background: teal;
+     border: 2px solid teal;
+     border-radius: 5px;
+     color: white;
+     font-size: 16px;
+     font-weight: 500;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ #btn:hover {
+     padding: 15px;
+ }
+ 
+ /* download btn */
+ .download-btn {
+ 
+     text-decoration: none;
+     padding: 12px;
+     margin: 10px;
+     border: 2px solid teal;
+     border-radius: 5px;
+     color: teal;
+     background: transparent;
+ }
+ 
+ /* @media (min-width: 768px) {
+     .product {
+       flex-direction: row;
+       justify-content: space-between;
+       width: 70%;
+       margin: 0 auto;
+     }
+ 
+     .product img {
+       width: 40%;
+     
+     }
+ 
+     .descrip {
+       width: 60%;
+     }
+   } */
+ 
+ 
+  
+   /* client say */
+   .client{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     background-color: #efebeb;
+     padding: 20px;
+     box-sizing: border-box;
+     margin-top: 20px;
+     /* display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #efebeb;
+     width: 100%;
+     height: 450px;
+     margin-top: 25px; */
+ }
+ .client div{
+     background-color: #fff;
+     margin: 30px;
+     height: 250px;
+     width: 280px;
+     text-align: center;
+     border-radius: 5px;
+     border: 2px solid teal;
+ }
+ .client div:hover{
+     background-color: #e4e0e0;
+ }
+ .client div img{
+     margin: 20px;
+     width: 50px;
+     height: 50px;
+ }
+ .client div h6{
+     margin-bottom: 18px;
+     color: brown;
+ }
+ .client div p{
+     margin: 10px;
+     color: brown;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+     line-height: 20px;
+ }
+ 
+ 
+ 
+   @media (max-width: 768px) {
+     .container {
+         padding: 10px;
+     }
+ 
+     header {
+         flex-direction: column;
+         align-items: center;
+     }
+ 
+     .list {
+         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     }
+ 
+     .item {
+         padding: 15px;
+     }
+ 
+     .card {
+         width: 100%;
+         height: auto;
+         max-height: 100%;
+         position: relative;
+     }
+ 
+     .off-screen-menu {
+         width: 80%;
+     }
+ 
+     .services > div {
+         flex: 1 0 40%;
+     }
+ }
+ 
+ 
+ 
+ 
+ 
+ /* resposive */
+ 
+ @media (max-width: 768px) {
+     .card{
+         width: 25rem;
+         height: 15rem;
+     }
+     .product {
+       flex-direction: column;
+     }
+   
+     img {
+       margin-bottom: 10px;
+     }
+   p{
+     /* display: none; */
+     font-size: 15px;
+   }
+     .descrip {
+       
+       margin: 10px;
+       font-size: 10px;
+     }
+   
+     .descrip h3 {
+       font-size: 15px;
+       line-height: 30px;
+     }
+   }

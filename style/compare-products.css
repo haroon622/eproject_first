@@ -1,0 +1,202 @@
+td>img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border: solid teal 3px;
+}
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #195466;
+  --bs-gray-900: teal;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: white;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-rgb: 33, 37, 41;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: teal;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 600;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: white;
+  --bs-body-bg: white;
+}
+
+.good {
+  background-color: teal;
+}
+
+.table {
+  --bs-table-bg: white;
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: ;
+  --bs-table-striped-bg: white;
+  --bs-table-active-color: teal;
+  --bs-table-active-bg: teal;
+  --bs-table-hover-color: teal;
+  --bs-table-hover-bg: white;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: white;
+  vertical-align: top;
+  border-color: white;
+  caption-side: bottom;
+  border-collapse: collapse;
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 2px;
+}
+
+/* body {
+            margin: 0;
+            font-family: var(--bs-body-font-family);
+            font-size: var(--bs-body-font-size);
+            font-weight: var(--bs-body-font-weight);
+            line-height: var(--bs-body-line-height);
+            color: var(--bs-body-color);
+            text-align: var(--bs-body-text-align);
+            background-color: var(--bs-body-bg);
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+        } */
+.table {
+  padding: .5rem .5rem;
+  background-color: var(--bs-table-bg);
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efebeb;
+  max-width: 100%;
+  max-height: 500px;
+  margin-top: 25px;
+}
+
+.client h4 {
+  position: absolute;
+  top: 3040px;
+  color: brown;
+}
+
+.client div {
+  background-color: #ffff;
+  margin: 30px;
+  max-height: 350px;
+  width: 280px;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid teal;
+}
+
+.client div:hover {
+  background-color: #e4e0e4;
+}
+
+.client div img {
+  margin: 20px;
+}
+
+.client div h6 {
+  margin-bottom: 18px;
+  color: brown;
+}
+
+.client div p {
+  margin: 10px;
+  color: brown;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efebeb;
+    max-width: 100%;
+    max-height: 1000px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+  }
+
+  .client h4 {
+    position: absolute;
+    top: 3040px;
+    color: brown;
+  }
+
+  .client div {
+    background-color: #ffff;
+    margin: 30px;
+    max-height: 350px;
+    width: 280px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid teal;
+  }
+
+  .client div:hover {
+    background-color: #e4e0e4;
+  }
+
+  .client div img {
+    margin: 20px;
+    width: 20px;
+  }
+
+  .client div h6 {
+    margin-bottom: 18px;
+    color: brown;
+  }
+
+  .client div p {
+    margin: 10px;
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    line-height: 8px;
+  }
+
+}
